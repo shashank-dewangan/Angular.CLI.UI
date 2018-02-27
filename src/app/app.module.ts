@@ -6,11 +6,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ArrComponent } from './arr/arr.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,CvrComponent
+    AppComponent,HomeComponent,CvrComponent, ArrComponent
   ],
   imports: [
     BrowserModule,FormsModule

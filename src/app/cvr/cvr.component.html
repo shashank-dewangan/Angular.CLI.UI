@@ -1,3 +1,23 @@
-<p>
-  cvr works!
-</p>
+<h2 class='red'>CVR Component</h2>
+<input type='text' [(ngModel)]='myProperty' />
+
+<br />
+<br />
+<span [style.border]="myProperty ? '1px solid blue' : 'none'">{{myProperty}}</span>
+<br />
+<br />
+<input [class.blue] = "myProperty" [style.background] = "myProperty ? 'greenyellow':'none'" type='button' value='OK' (click) = 'onClick()' 
+[disabled] = 'myProperty' />
+<br />
+<br />
+<div [ngSwitch]="priority" [class.green]="myProperty">
+<label *ngSwitchCase="'high'">High Priority</label>
+<label *ngSwitchCase="'medium'">Medium Priority</label>
+<label *ngSwitchCase="'low'">Low Priority</label>
+<label *ngSwitchDefault>No Priority</label>
+</div>
+<h2 [class.yellow] = "myProperty" [class.greenBck] = "myProperty">Sample Text</h2>
+<br />
+<div>
+    <h1 [ngClass]="cls">Class Sample</h1>
+</div>

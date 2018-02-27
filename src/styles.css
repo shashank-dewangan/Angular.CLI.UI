@@ -2,3 +2,33 @@
 .red{
     color: red;
 }
+.green{
+    color: green;
+}
+.blue{
+    color:blue;
+}
+.yellow{
+    color:yellow;
+}
+.greenYelowBck
+{
+    background-color: greenyellow;
+}
+.greenBck
+{
+    background-color: green;
+}
+.header
+{
+    color:white;
+    background-color: lightblue
+}
+.grayBck
+{
+    background-color: lightgray;
+}
+.darkGrayBck
+{
+    background-color: gray;
+}

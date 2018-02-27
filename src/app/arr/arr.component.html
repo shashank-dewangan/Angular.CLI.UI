@@ -1,0 +1,28 @@
+<div>
+  <ul>
+    <li *ngFor="let a of arr">{{a}}</li>
+  </ul>
+</div>
+<div>
+  <table border="1px">
+    <tr [ngClass] = "'header'">
+      <th>VALUE</th>
+      <th>Index</th>
+      <th>Even</th>
+      <th>Odd</th>
+      <th>First</th>
+      <th>Last</th>
+    </tr>
+    <tr [ngClass]="evn? 'darkGrayBck' : 'grayBck'" *ngFor="let val of arr;let idx=index;let evn = even;let od=odd;let fst=first;let lst=last">
+      <td>{{val}}</td>
+      <td>{{idx}}</td>
+      <td>{{evn}}</td>
+      <td>{{od}}</td>
+      <td>{{fst}}</td>
+      <td>{{lst}}</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <input type="hidden" value="empty" />
+</div>
